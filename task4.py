@@ -8,7 +8,8 @@ ranks = "A23456789TJQK"
 suits = "CDHS"
 
 def createDeck():
-  return 
+  cardList = [ranks[i]+suits[j] for i in range(len(ranks)) for j in range(len(suits))]
+  return cardList
 
 def main():
   deck = createDeck()
